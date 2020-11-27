@@ -1,16 +1,15 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class MinimumJump {
+public class MinimunJump {
 	private static String minJump(int arr[], int n) {
-		
+
 	}
 
 	public static void main(String args[]) {
 		var scan = new Scanner(System.in);
 		int testCase = scan.nextInt();
 		while (testCase-- > 0) {
-			int k = scan.nextInt();
 			int numElem = scan.nextInt();
 			int arr[] = new int[numElem];
 			for (int i = 0; i < numElem; i++)
