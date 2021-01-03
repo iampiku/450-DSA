@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class MinimunJump {
 	private static String minJump(int arr[], int n) {
-
+		
 	}
 
 	public static void main(String args[]) {

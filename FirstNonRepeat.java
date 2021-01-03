@@ -10,11 +10,11 @@ public class FirstNonRepeat {
 				Integer count = map.get(i);
 				map.put(i, count + 1);
 			} else {
-				map.put(i , 1);
+				map.put(i, 1);
 			}
 		}
 		for (Character j : a.toCharArray()) {
-			if (map.get(j) == 1) 
+			if (map.get(j) == 1)
 				return j;
 		}
 		return '$';
@@ -24,5 +24,6 @@ public class FirstNonRepeat {
 		var scan = new Scanner(System.in);
 		String a = scan.nextLine().toLowerCase();
 		System.out.println(nonRepeat(a));
+		scan.close();
 	}
 }

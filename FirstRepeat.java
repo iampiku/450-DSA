@@ -10,11 +10,11 @@ public class FirstRepeat {
 				Integer count = map.get(i);
 				map.put(i, count + 1);
 			} else {
-				map.put(i , 1);
+				map.put(i, 1);
 			}
 		}
 		for (Character j : a.toCharArray()) {
-			if (map.get(j) > 1) 
+			if (map.get(j) > 1)
 				return j;
 		}
 		return '$';
@@ -23,9 +23,10 @@ public class FirstRepeat {
 	public static void main(String args[]) {
 		Scanner scan = new Scanner(System.in);
 		int testCase = scan.nextInt();
-		while (testCase-- >0) {
-	    String a = scan.next().toLowerCase();
-	    System.out.println(firstRepeatChar(a));
+		while (testCase-- > 0) {
+			String a = scan.next().toLowerCase();
+			System.out.println(firstRepeatChar(a));
 		}
+		scan.close();
 	}
 }

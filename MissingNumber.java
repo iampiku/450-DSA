@@ -1,10 +1,9 @@
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class MissingNumber {
 	private static int missingNum(int arr[], int n) {
 		int num = 1;
-		for (int i=0; i<n; i++) {
+		for (int i = 0; i < n; i++) {
 			if (arr[i] == num)
 				num++;
 			else
@@ -12,6 +11,7 @@ public class MissingNumber {
 		}
 		return num;
 	}
+
 	public static void main(String args[]) {
 		var scan = new Scanner(System.in);
 		int testCase = scan.nextInt();
